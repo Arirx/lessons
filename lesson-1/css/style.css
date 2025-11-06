@@ -5,3 +5,19 @@
     margin: 0;
     outline: 0;
 }
+
+.services__main-text {
+    color: #01353E;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 128px 802px 96px 744px;
+    width: 374px;
+    height: 56px;
+}
+
+.services__cardhead-text {
+    color: #01353E;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 49px 0px 58px;
+}
