@@ -17,3 +17,17 @@ a {
 button, [type="submit"] {
     cursor: pointer;
 }
+
+.preview {
+    padding: 199px 238px 160px;
+}
+
+.preview__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.preview__image {
+    width: 576px;
+    height: 422px;
+}
