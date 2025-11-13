@@ -9,3 +9,11 @@
 body {
     background-color: #F8F8F8;
 }
+
+a {
+    text-decoration: none;
+}
+
+button, [type="submit"] {
+    cursor: pointer;
+}
