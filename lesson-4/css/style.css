@@ -8,7 +8,7 @@
 
 body {
     background-color: #F8F8F8;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 a {
@@ -36,12 +36,12 @@ button, [type="submit"] {
 }
 
 .preview-package__header {
-    font: normal 400 58px/63.8px "Roboto", sans-serif;
+    font: normal 400 58px/63.8px "Fraunces", sans-serif;
     margin-bottom: 21px;
 }
 
 .preview-package__text {
-    font: normal 400 20px/30px "Roboto", sans-serif;
+    font: normal 400 20px/30px "Inter", sans-serif;
     margin-bottom: 32px;
 }
 
