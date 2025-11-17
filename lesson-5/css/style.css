@@ -11,16 +11,45 @@ a {
 }
 
 body {
-    background-color: #F8F8F8;
+    background-color: #F7F9FA;
     font-family: "Inter", sans-serif;
+}
+
+.preview {
+    width: 80%;
+    max-width: 1440px;
+    padding: 80px calc(10%);
+}
+
+.preview__header {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.articles {
+    display: flex;
+    gap: 32px;
 }
 
 .preview__header-text {
     font: normal 400 42px/50.4px "Fraunces", sans-serif;
 }
 
-.preview-header_posts {
+.preview__header-posts {
     font: normal 400 17px/27px "Inter", sans-serif;
-    margin: 8px 32px;
+    padding: 8px 32px;
     color: #0070A0;
+    margin-left: auto;
+}
+
+.card-image {
+    width: 355px;
+}
+
+.card-categories {
+    font: normal 400 12px/16px "Inter", sans-serif;
+    background-color: #E6F7FF;
+    color: #2C90C9;
+    padding: 2px 12px 4px;
+    margin: 25px 0px 8px;
 }
