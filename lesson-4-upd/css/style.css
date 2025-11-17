@@ -46,14 +46,7 @@ button, [type="submit"] {
 }
 
 .preview__image {
-    width: 576px;
     height: 422px;
-}
-
-.preview-package__link-block {
-    display: flex;
-    gap: 18px;
-    padding: 8px 30px 8px 15px;
 }
 
 .preview-package__buttons {
@@ -64,9 +57,14 @@ button, [type="submit"] {
 .preview-package__button {
     background-color: #0070A0;
     color: #fff;
-    padding: 8px 56px 8px 56px;
+    padding: 8px 56px;
 }
 
-.preview-package__link-text {
+.preview-package__link {
     color: #0070A0;
+}
+
+.preview-package__link-vector {
+    padding-left: 20px;
+    height: 17px;
 }
