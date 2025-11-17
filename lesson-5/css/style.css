@@ -9,3 +9,18 @@
 a {
     text-decoration: none;
 }
+
+body {
+    background-color: #F8F8F8;
+    font-family: "Inter", sans-serif;
+}
+
+.preview__header-text {
+    font: normal 400 42px/50.4px "Fraunces", sans-serif;
+}
+
+.preview-header_posts {
+    font: normal 400 17px/27px "Inter", sans-serif;
+    margin: 8px 32px;
+    color: #0070A0;
+}
