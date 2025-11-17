@@ -42,14 +42,35 @@ body {
     margin-left: auto;
 }
 
-.card-image {
-    width: 355px;
+.articles__card-image {
+    max-width: 355px;
 }
 
-.card-categories {
+.articles__card-categories {
     font: normal 400 12px/16px "Inter", sans-serif;
     background-color: #E6F7FF;
     color: #2C90C9;
     padding: 2px 12px 4px;
-    margin: 25px 0px 8px;
+    margin-top: 25px;
 }
+
+.articles__card-info {
+    background-color: #FFF;
+    padding: 25px 28px 28px 24px;
+}
+
+.articles__card-header {
+    font: normal 400 25px/31.25px "Inter", sans-serif;
+    margin-top: 11px;
+}
+
+.articles__card-text {
+    font: normal 400 14px/19.6px "Inter", sans-serif;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.articles__card-date {
+    font: normal 400 12px/19.6px "Inter", sans-serif;
+}
+
