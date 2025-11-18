@@ -37,21 +37,22 @@ body {
 
 .leadership-cards {
     display: flex;
+    justify-content: center;
     gap: 169px;
     max-width: 1017px;
     width: 100%;
     margin-top: 60px;
+
+}
+
+.leadership-cards__info {
+    position: relative;
 
     &:hover .leadership-cards__hover {
         z-index: 1;
         visibility: visible;
         opacity: 1;
     }
-}
-
-.leadership-cards__info {
-    position: relative;
-    
 }
 
 .leadership-cards__info-photo {
