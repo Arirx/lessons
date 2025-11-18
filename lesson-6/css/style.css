@@ -5,3 +5,54 @@
     margin: 0;
     outline: 0;
 }
+
+body {
+    background-color: #F1F8FC;
+    font-family: "Open Sans", sans-serif;
+}
+
+.leadership-header {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 26px;
+}
+
+.leadership-header::before {
+    content: "";
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    display: block;
+    background-color: #2B9AD6;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leadership-cards__info-photo {
+    position: relative;
+    width: 220px;
+}
+
+.leadership-cards__info-image {
+    width: 220px;
+}
+
+.leadership-cards__info-icon {
+    width: 50px;
+    position: absolute;
+    bottom: 15px;
+    right: 21px;
+}
+
+.leadership-cards__info-name {
+    font: normal 700 24px/140% "Open Sans", sans-serif;
+    color: #194F94;
+    margin-top: 20px;
+}
+
+.leadership-cards__info-position {
+    font: normal 400 17px/150% "Open Sans", sans-serif;
+    color: #5F5F5F;
+}
