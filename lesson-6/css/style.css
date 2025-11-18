@@ -11,6 +11,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.leadership {
+    margin: 0 calc((100% - 1017px) / 2);
+}
+
 .leadership-header {
     text-align: center;
     position: relative;
@@ -28,6 +32,26 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+.leadership-cards {
+    display: flex;
+    gap: 169px;
+    max-width: 1017px;
+    width: 100%;
+    margin-top: 60px;
+
+    &:hover .leadership-cards__hover {
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.leadership-cards__info {
+    position: relative;
+    
 }
 
 .leadership-cards__info-photo {
@@ -55,4 +79,53 @@ body {
 .leadership-cards__info-position {
     font: normal 400 17px/150% "Open Sans", sans-serif;
     color: #5F5F5F;
+}
+
+.leadership-cards__hover {
+    width: 293px;
+    height: 361px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.leadership-cards__hover__item {
+    position: relative;
+}
+
+.leadership-cards__hover-background {
+    width: 293px;
+}
+
+.leadership-cards__hover-avatar {
+    width: 220px;
+    position: absolute;
+    bottom: 124px;
+    right: 37px;
+}
+
+.leadership-cards__hover-link {
+    position: absolute;
+    width: 50px;
+    bottom: 139px;
+    right: 58px;
+}
+
+.leadership-cards__hover-name {
+    position: absolute;
+    bottom: 68px;
+    left: 27px;
+    color: #fff;
+    font: normal 700 24px/140% "Open Sans", sans-serif;
+}
+
+.leadership-cards__hover-position {
+    position: absolute;
+    bottom: 16px;
+    left: 27px;
+    color: #fff;
+    font: normal 400 17px/150% "Open Sans", sans-serif;
 }
