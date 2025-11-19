@@ -12,7 +12,8 @@ body {
 }
 
 .leadership {
-    margin: 0 calc((100% - 1017px) / 2);
+    max-width: 1017px;
+    margin: 0 auto;
 }
 
 .leadership-header {
@@ -37,10 +38,9 @@ body {
 
 .leadership-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 169px;
-    max-width: 1017px;
-    width: 100%;
     margin-top: 60px;
 
 }
