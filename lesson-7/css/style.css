@@ -83,13 +83,30 @@ a {
     text-align: center;
 }
 
-.reviews-header {}
+.reviews-header {
+    text-align: center;
+    margin-bottom: 92px;
+    font: normal 700 36px/100% "Roboto", sans-serif;
+    color: #000;
+}
 
-.reviews-info {}
+.reviews-info {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.reviews-info__card {}
+.reviews-info__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.reviews-info__card-image {}
+.reviews-info__card-image {
+    width: 288px;
+}
 
 .reviews-info__card-text {}
 
