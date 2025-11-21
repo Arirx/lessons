@@ -5,3 +5,29 @@
     bottom: 0;
     outline: 0;
 }
+
+.feature, .reviews {
+    max-width: 1280px;
+    display: flex;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #FFF;
+}
+
+.feature {
+    margin: 190px auto 52px;
+}
+
+.reviews {
+    margin: 0 auto 52px;
+}
+
+.feature-header {}
+
+.feature-info {}
+
+.feature-info__card {}
+
+.feature-info__card-circle {}
+
+.feature-info__card-text {}
