@@ -8,8 +8,6 @@
 
 .feature, .reviews {
     max-width: 1280px;
-    display: flex;
-    text-align: center;
     font-family: "Roboto", sans-serif;
     background-color: #FFF;
 }
@@ -22,12 +20,59 @@
     margin: 0 auto 52px;
 }
 
-.feature-header {}
+.feature-header {
+    text-align: center;
+    margin: 190px 0 70px;
+    font: normal 400 36px/100% "Roboto", sans-serif;
+    color: #000;
+}
 
-.feature-info {}
+.feature-info {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.feature-info__card {}
+.feature-info__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 339px;
+    margin-bottom: 110px;
+}
 
-.feature-info__card-circle {}
+.feature-info__card-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
 
-.feature-info__card-text {}
+#circle-1 {
+    background-color: #21F7EC;
+}
+
+#circle-2 {
+    background-color: #33D3BC;
+}
+
+#circle-3 {
+    background-color: #18A5C6;
+}
+
+#circle-4 {
+    background-color: #D38F62;
+}
+
+#circle-5 {
+    background-color: #F94C43;
+}
+
+#circle-6 {
+    background-color: #D399FF;
+}
+
+.feature-info__card-text {
+    font: normal 700 30px/100% "Roboto", sans-serif;
+}
