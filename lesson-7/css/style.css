@@ -6,19 +6,24 @@
     outline: 0;
 }
 
-.feature, .reviews {
+.feature, .reviews-container {
     max-width: 1280px;
     font-family: "Roboto", sans-serif;
-    background-color: #FFF;
+    margin: 0 auto;
 }
 
 .feature {
     margin: 190px auto 52px;
+    background-color: #FFF;
+}
+
+.reviews-container {
+    background: transparent;
 }
 
 .reviews {
-    margin: 0 auto;
     background: linear-gradient(to bottom, #fff 0%, #fff 50%, #F0F0F0 50%, #F0F0F0 100%);
+    width: 100%;
 }
 
 .feature-header {
