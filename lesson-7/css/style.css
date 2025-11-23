@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    outline: 0;
+}
+
+.feature, .reviews-container {
+    max-width: 1280px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+.feature {
+    margin: 190px auto 52px;
+    background-color: #FFF;
+}
+
+.reviews-container {
+    background: transparent;
+}
+
+.reviews {
+    background: linear-gradient(to bottom, #fff 0%, #fff 50%, #F0F0F0 50%, #F0F0F0 100%);
+    width: 100%;
+}
+
+.feature-header {
+    text-align: center;
+    margin: 190px 0 70px;
+    font: normal 400 36px/100% "Roboto", sans-serif;
+    color: #000;
+}
+
+.feature-info {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-info__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 339px;
+    margin-bottom: 110px;
+}
+
+.feature-info__card-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#circle-1 {
+    background-color: #21F7EC;
+}
+
+#circle-2 {
+    background-color: #33D3BC;
+}
+
+#circle-3 {
+    background-color: #18A5C6;
+}
+
+#circle-4 {
+    background-color: #D38F62;
+}
+
+#circle-5 {
+    background-color: #F94C43;
+}
+
+#circle-6 {
+    background-color: #D399FF;
+}
+
+.feature-info__card-text {
+    font: normal 700 30px/100% "Roboto", sans-serif;
+    text-align: center;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 92px;
+    font: normal 700 36px/100% "Roboto", sans-serif;
+    color: #000;
+}
+
+.reviews-info {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reviews-info__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-info__card-image {
+    width: 288px;
+}
+
+.reviews-info__card-text {
+    font: normal 700 24px/100% "Roboto", sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.reviews-info__card-name {
+    font: normal 400 20px/100% "Roboto", sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.reviews-info__card-link {
+    font: normal 700 18px/100% "Roboto", sans-serif;
+    color: #000;
+    margin: 52px 0;
+}
