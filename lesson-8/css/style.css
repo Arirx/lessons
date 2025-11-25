@@ -11,7 +11,7 @@
     max-width: 780px;
     margin: 0 auto;
     background-color: #F1F0ED;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 97% 100%, 0 100%);
 }
 
 .assistant-content {
@@ -28,6 +28,7 @@
     position: absolute;
     top: 22px;
     right: 20px;
+    background-color: transparent;
 }
 
 .assistant-close__image {
@@ -45,8 +46,13 @@
     font: normal 500 17px/100% "Montserrat", sans-serif;
 } 
 
+.input { /* при написании просто через input ширина не применяется*/
+    min-width: 100px;
+    max-width: 622px;
+    width: 100%;
+}
+
 input {
-    max-width: 622px; /* !!!! */
     border-bottom: 1px solid #DAD6CE;
     padding-top: 20px;
     font: normal 500 17px/100% "Montserrat", sans-serif;
@@ -66,7 +72,7 @@ input {
     margin-right: 80px;
     margin-bottom: 56px;
     padding: 15px 88px 16px 67px;
-    border: 1px solid #DAD6CE;
+    border: 2px solid #DAD6CE;
     background-color: #F1F0ED;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     cursor: pointer;
