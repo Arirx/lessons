@@ -10,6 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="assistant">
+        <div class="assistant-content">
+            <button class="assistant-close">+</button>
+            <h2 class="assistant-header">Нужна помощь с подбором</h2>
+            <form class="assistant-form">
+                <label class="assistant-form__name">
+                    Ф.И.О.*
+                    <input type="text">
+                </label>
+                <label class="assistant-form__email">
+                    Электронная почта*
+                    <input type="email">
+                </label>
+                <label class="assistant-form__tel">
+                    Контактный телефон*
+                    <input type="tel">
+                </label>
+                <label class="assistant-form__comment">
+                    Комментарий
+                    <input type="text"> <!--в данном случае лучше type="text" или <textarea>?-->
+                </label>
+                <div class="assistant-form__send">
+                    <label class="assistant-form__send-checkbox">
+                        <input type="checkbox" required>
+                        <span class="assistant-form__send-text">я соглашаюсь с условиями <br>политики конфеденциальности</span>
+                    </label>
+                    <button class="assistant-form__send-button">Отправить</button>
+                </div>
+            </form>
+        </div>
     
 </body>
 </html>
