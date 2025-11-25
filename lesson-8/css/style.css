@@ -10,14 +10,23 @@
     font-family: "Montserrat", sans-serif;
     max-width: 780px;
     margin: 0 auto;
+    background-color: #F1F0ED;
 }
 
 .assistant-content {
-    margin: 46px 79px 0px;
+    margin: 46px 0 0 79px;
+    position: relative;
 }
 
 .assistant-header {
     font: normal 700 30px/100% "Montserrat", sans-serif;
+    margin: 46px 0 43px;
+}
+
+.assistant-close {
+    position: absolute;
+    top: 22px;
+    right: 20px;
 }
 
 .assistant-close__image {
