@@ -11,6 +11,7 @@
     max-width: 780px;
     margin: 0 auto;
     background-color: #F1F0ED;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
 }
 
 .assistant-content {
@@ -56,6 +57,23 @@ input {
     margin-bottom: 56px;
 }
 
+.assistant-form__send {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assistant-form__send-button {
+    margin-right: 80px;
+    margin-bottom: 56px;
+    padding: 15px 88px 16px 67px;
+    border: 1px solid #DAD6CE;
+    background-color: #F1F0ED;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    cursor: pointer;
+    color: #E5481D;
+    font: normal 700 14px/100% "Montserrat", sans-serif;
+}
+
 .assistant-form__send-checkbox {
     display: flex;
     cursor: pointer;
@@ -80,7 +98,7 @@ input {
     width: 21px;
     height: 15px;
     background-color: #fff;
-    border-radius: 4px 4px 20px 4px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
 }
 
 .assistant-form__send-checkbox input[type="checkbox"]:checked + .assistant-form__send-text::before {
@@ -88,4 +106,13 @@ input {
     background-size: 14px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.assistant-form__send-text {
+    font: normal 600 17px/24px "Montserrat", sans-serif ;
+}
+
+.assistant-form__send-link {
+    text-decoration: underline;
+    text-decoration-color: #E5481D;
 }
