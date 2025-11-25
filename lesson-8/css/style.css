@@ -5,3 +5,39 @@
     margin: 0;
     outline: 0;
 }
+
+.assistant {
+    font-family: "Montserrat", sans-serif;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.assistant-content {
+    margin: 46px 79px 0px;
+}
+
+.assistant-header {
+    font: normal 700 30px/100% "Montserrat", sans-serif;
+}
+
+.assistant-close__image {
+    width: 22px;
+    color: #D9D5CD;
+}
+
+.assistant-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.assistant-form__name, .assistant-form__email, .assistant-form__tel, .assistant-form__comment {
+    font: normal 500 17px/100% "Montserrat", sans-serif;
+} 
+
+input {
+    max-width: 622px; /* !!!! */
+    border-bottom: 1px solid #DAD6CE;
+    padding-top: 20px;
+    font: normal 500 17px/100% "Montserrat", sans-serif;
+}
