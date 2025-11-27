@@ -183,3 +183,62 @@ body {
     font: normal 400 14px/120% "Nunito Sans", sans-serif;
     color: #FFF;
 }
+
+@media (max-width: 834px) {
+    .footer-head {
+        margin: 60px 0 24px;
+    }
+
+    .footer-content {
+        margin: 24px 0 60px;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer-content__info {
+        gap: 34px;
+    }
+
+    .footer-content__info-item {
+        gap: 16px;
+    }
+
+    .footer-content__info-item__image {
+        width: 45px;
+    }
+    
+    .footer-content__info-item__text-label {
+        font-size: 14px;
+    }
+
+    .footer-head__text {
+        display: none;
+    }
+
+    .footer-content__menu {
+        display: none;
+    }
+
+    .footer-content__lawyer {
+        max-width: 334px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-bottom__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 390px) {
+    .footer-content__info {
+        gap: 16px;
+    }
+
+    .footer-content {
+        margin-bottom: 40px;
+    }
+}
