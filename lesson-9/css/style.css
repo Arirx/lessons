@@ -22,6 +22,7 @@ body {
 .footer {
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0 24px;
     background-color: transparent;
     font-family: "Nunito Sans", sans-serif;
 }
@@ -60,6 +61,7 @@ body {
 .footer-content {
     margin: 48px 0 80px;
     display: flex;
+    gap: 24px;
 }
 
 .footer-content__info {
@@ -101,7 +103,14 @@ body {
 }
 
 .footer-content__menu {
-    margin: 0 24px 0 auto;
+    margin-left: auto;
+    width: 312px;
+}
+
+.footer-content__menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-content__menu__link {
@@ -111,4 +120,48 @@ body {
 
 .footer-content__menu__link:hover {
     color: #4F8FF0;
+}
+
+.footer-content__lawyer {
+    margin-left: auto;
+    width: 424px;
+}
+
+.footer-content__lawyer__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer-content__lawyer__item-image {
+    width: 65px;
+}
+
+.footer-content__lawyer__item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content__lawyer__item__info-name {
+    font: normal 700 20px/150% "Nunito Sans", sans-serif;
+    color: #FFF;
+}
+
+.footer-content__lawyer__item__info-position {
+    font: normal 300 14px/120% "Nunito Sans", sans-serif;
+    color: #FFF;
+}
+
+.footer-content__lawyer-caption {
+    font: normal 400 14px/150% "Nunito Sans", sans-serif;
+    color:#FFF;
+    margin-bottom: 24px;
+}
+
+.footer-content__lawyer-button {
+    padding: 16px 24px;
+    background-color: #4F8FF0;
+    font: normal 900 14px/120% "Nunito Sans", sans-serif;
+    color: #FFF;
 }
