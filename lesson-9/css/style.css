@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: #FFF;
 }
 
 ul {
@@ -19,12 +20,18 @@ body {
     background-color: #222;
 }
 
-.footer {
+.footer, .footer-bottom__container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 24px;
     background-color: transparent;
     font-family: "Nunito Sans", sans-serif;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #181818;
+    padding: 16px 0;
 }
 
 .footer-head {
@@ -163,5 +170,16 @@ body {
     padding: 16px 24px;
     background-color: #4F8FF0;
     font: normal 900 14px/120% "Nunito Sans", sans-serif;
+    color: #FFF;
+}
+
+.footer-bottom__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom__policy, .footer-bottom__text {
+    font: normal 400 14px/120% "Nunito Sans", sans-serif;
     color: #FFF;
 }
