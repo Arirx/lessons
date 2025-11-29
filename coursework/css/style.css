@@ -63,30 +63,62 @@ ul, ol {
 }
 
 .header__content {
-    margin: 463px 0 41px 0;
+    margin-top: 463px;
+    padding-bottom: 81px;
 }
 
 .header__text {
     font: bold 50px/150% "Montserrat", sans-serif;
     color: #FDFDFD;
+    margin-bottom: 41px;
 }
 
 .header__tour {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .header__form {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .form__block {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .form__select {
     border: 1px solid #FDFDFD;
     color: #FDFDFD;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 270px;
+    height: 52px;
+    text-indent: 16px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.form__select option {
+    font: bold 16px/150% "Montserrat", sans-serif;
+    color: #000;
+}
+
+.block__text {
+    font: normal 14px/150% "Montserrat", sans-serif;
+    color: #FDFDFD;
+    margin: 8px 0 0 8px;
+}
+
+.form__search {
+    padding: 16px 36px;
+    color: #1A3E3E;
+    background-color: #FDFDFD;
+    border-radius: 4px;
+    margin-bottom: 28px;
 }
