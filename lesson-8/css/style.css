@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.assistant {
+    font-family: "Montserrat", sans-serif;
+    max-width: 780px;
+    margin: 0 auto;
+    background-color: #F1F0ED;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 97% 100%, 0 100%);
+}
+
+.assistant-content {
+    margin: 46px 0 0 79px;
+    position: relative;
+}
+
+.assistant-header {
+    font: normal 700 30px/100% "Montserrat", sans-serif;
+    padding: 46px 0 43px;
+}
+
+.assistant-close {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background-color: transparent;
+}
+
+.assistant-close__image {
+    width: 22px;
+    color: #D9D5CD;
+}
+
+.assistant-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.assistant-form__name, .assistant-form__email, .assistant-form__tel, .assistant-form__comment {
+    font: normal 500 17px/100% "Montserrat", sans-serif;
+} 
+
+.input { /* при написании просто через input ширина не применяется*/
+    min-width: 100px;
+    max-width: 622px;
+    width: 100%;
+}
+
+input {
+    border-bottom: 1px solid #DAD6CE;
+    padding-top: 20px;
+    font: normal 500 17px/100% "Montserrat", sans-serif;
+    background-color: transparent;
+}
+
+.assistant-form__comment {
+    margin-bottom: 56px;
+}
+
+.assistant-form__send {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assistant-form__send-button {
+    margin-right: 80px;
+    margin-bottom: 56px;
+    padding: 15px 88px 16px 67px;
+    border: 2px solid #DAD6CE;
+    background-color: #F1F0ED;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    cursor: pointer;
+    color: #E5481D;
+    font: normal 700 14px/100% "Montserrat", sans-serif;
+}
+
+.assistant-form__send-checkbox {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 15px;
+}
+
+.assistant-form__send-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.assistant-form__send-checkbox input[type="checkbox"] + .assistant-form__send-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 21px;
+    height: 15px;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
+
+.assistant-form__send-checkbox input[type="checkbox"]:checked + .assistant-form__send-text::before {
+    background-image: url("../img/check.png");
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.assistant-form__send-text {
+    font: normal 600 17px/24px "Montserrat", sans-serif ;
+}
+
+.assistant-form__send-link {
+    text-decoration: underline;
+    text-decoration-color: #E5481D;
+}

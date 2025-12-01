@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 8</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="assistant">
+        <div class="assistant-content">
+            <h2 class="assistant-header">Нужна помощь с подбором</h2>
+            <button class="assistant-close"><img src="img/img-close.svg" alt="close image" class="assistant-close__image"></button>
+            <form class="assistant-form">
+                <label class="assistant-form__name">
+                    Ф.И.О.*<br>
+                    <input type="text" name="name" class="input">
+                </label>
+                <label class="assistant-form__email">
+                    Электронная почта*<br>
+                    <input type="email" name="email" class="input">
+                </label>
+                <label class="assistant-form__tel">
+                    Контактный телефон*<br>
+                    <input type="tel" name="tel" class="input">
+                </label>
+                <label class="assistant-form__comment">
+                    Комментарий<br>
+                    <input type="text" name="comment" class="input"> <!-- в данном случае лучше type="text" или <textarea>? -->
+                </label>
+                <div class="assistant-form__send">
+                    <label class="assistant-form__send-checkbox">
+                        <input type="checkbox" required name="checkbox">
+                        <span class="assistant-form__send-text">я соглашаюсь с условиями <br><a class="assistant-form__send-link">политики конфеденциальности</a></span>
+                    </label>
+                    <button class="assistant-form__send-button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    
+</body>
+</html>
