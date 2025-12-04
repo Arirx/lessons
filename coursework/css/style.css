@@ -17,6 +17,10 @@ ul, ol {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   background-image: url(../img/header-background.png);
   background-size: cover;
@@ -50,12 +54,12 @@ ul, ol {
 }
 
 .header__nav-link {
-  font: normal 18px/auto "Montserrat", sans-serif;
+  font: 600 18px/100% "Montserrat", sans-serif;
   color: #FDFDFD;
 }
 
 .header__button {
-  font: normal 16px/20px "Montserrat", sans-serif;
+  font: 600 16px/20px "Montserrat", sans-serif;
   color: #FDFDFD;
   margin-left: 49px;
   padding: 12px 24px;
@@ -68,7 +72,7 @@ ul, ol {
 }
 
 .header__text {
-  font: bold 50px/150% "Montserrat", sans-serif;
+  font: 700 50px/150% "Montserrat", sans-serif;
   color: #FDFDFD;
   margin-bottom: 41px;
 }
@@ -105,20 +109,105 @@ ul, ol {
 }
 
 .form__select option {
-  font: bold 16px/150% "Montserrat", sans-serif;
+  font: 700 16px/150% "Montserrat", sans-serif;
   color: #000;
 }
 
 .block__text {
-  font: normal 14px/150% "Montserrat", sans-serif;
+  font: 400 14px/150% "Montserrat", sans-serif;
   color: #FDFDFD;
   margin: 8px 0 0 8px;
 }
 
 .form__search {
+  font: 700 16px/20px "Montserrat", sans-serif;
   padding: 16px 36px;
   color: #1A3E3E;
   background-color: #FDFDFD;
   border-radius: 4px;
   margin-bottom: 28px;
+}
+
+.subtitle {
+  font: 400 24px/20px "Montserrat", sans-serif;
+  color: #F2BE22;
+}
+
+.title {
+  font: 800 32px/120% "Montserrat", sans-serif;
+  color: #18121E;
+}
+
+.hike {
+  background-color: #FFF;
+}
+
+.hike__main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hike__media {
+  position: relative;
+  width: 480px;
+  height: 526px;
+}
+
+.hike__media-image {
+  position: absolute;
+  width: 350px;
+}
+
+.media-video {
+  position: absolute;
+  top: 126px;
+  left: 130px;
+}
+
+.hike__media-video {
+  position: relative;
+  width: 350px;
+}
+
+.video-play {
+  position: absolute;
+  top: 175px;
+  left: 150px;
+}
+
+.hike__info {
+  width: 580px;
+}
+
+.hike__info-subtitle {
+  margin-bottom: 8px;
+}
+
+.hike__info-description {
+  font: 400 18px/150% "Montserrat", sans-serif;
+  margin: 40px 0;
+}
+
+.hike__info-button {
+  font: 600 16px/20px "Montserrat", sans-serif;
+  padding: 16px 36px;
+  color: #FDFDFD;
+  background-color: #1A3E3E;
+}
+
+.offer {
+  background-color: #F3F5F4;
+}
+
+.offer__main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 80px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -59,7 +59,7 @@
                 <option value="February">Февраль</option>
                 <option value="March">Март</option>
               </select>
-              <label class="block__text">укажите месяц</label>
+              <label class="block__text">укажите диапазон</label>
             </div>
             <div class="form__block">
               <select id="player" name="player-select" class="form__select">
@@ -80,29 +80,33 @@
   </header>
 
   <main class="content">
+
 		<section class="hike">
 			<div class="hike__main">
-				<div class="hike__image">
-					<img src="" alt="image" class="">
-					<img src="" alt="image" class="">
+				<div class="hike__media">
+					<img src="img/hike-1.png" alt="image" class="hike__media-image">
+					<div class="media-video">
+            <img src="img/hike-2.png" alt="video" class="hike__media-video">
+            <button class="video-button" type="button" aria-label="search video"><img src="img/play-item.svg" alt="" class="video-play"></button>
+          </div>
 				</div>
-				<div class="hike__description">
-					<span class="">о нашем походе</span>
-					<h2 class="">Исследуйте все горные массивы мира вместе с нами</h2>
-					<p class="">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. 
+				<div class="hike__info">
+					<span class="hike__info-subtitle subtitle">о нашем походе</span>
+					<h2 class="hike__info-title title">Исследуйте все горные массивы мира вместе с нами</h2>
+					<p class="hike__info-description">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. 
 						Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов 
 						в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
-					<button class="">Программа тура</button>
+					<button class="hike__info-button">Программа тура</button>
 				</div>
 			</div>
 		</section>
 
 		<section class="offer">
 			<div class="offer__main">
-				<div class="offer__description">
-					<span class="">наше предложение</span>
-					<h3 class="">Лучшие программы для тебя</h3>
-					<p class="">Его корни уходят в один фрагмент классической латыни 45 года н.э., 
+				<div class="offer__info">
+					<span class="offer__info-subtitle subtitle">наше предложение</span>
+					<h3 class="offer__info-title title">Лучшие программы для тебя</h3>
+					<p class="offer__info-description">Его корни уходят в один фрагмент классической латыни 45 года н.э., 
 						то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
 					<div class="offer__list">
 						<!-- 1 -->
