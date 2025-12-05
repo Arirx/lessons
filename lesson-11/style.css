@@ -48,6 +48,7 @@
 .cell-bottom-right {
   grid-area: cell-bottom-right;
   width: 580px;
+  justify-self: end;
 }
 
 .cell-title {
