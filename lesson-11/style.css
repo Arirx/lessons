@@ -5,3 +5,40 @@
   padding: 0;
   outline: 0;
 }
+
+.grid {
+  background-color: #D9D9D9;
+
+}
+
+.grid__content-cell {
+  margin: 115px auto 117px;
+  display: grid;
+  grid-template-columns: 580px 700px;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "cell-top-left cell-top-right"
+    "cell-bottom-left cell-bottom-right";
+    column-gap: 140px;
+    row-gap: 72px;
+}
+
+.cell-top-left { 
+  grid-area: cell-top-left; 
+  width: 580px;
+}
+
+.cell-top-right {
+  grid-area: cell-top-right;
+  width: 700px;
+}
+
+.cell-bottom-left {
+  grid-area: cell-bottom-left;
+  width: 700px;
+}
+
+.cell-bottom-right {
+  grid-area: cell-bottom-right;
+  width: 580px;
+}
