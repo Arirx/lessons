@@ -7,14 +7,15 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" 
+  rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
     <div class="header__main">
       <div class="header__top">
-        <img src="img/logo.png" alt="logo" class="header__logo">
+        <img src="img/header/logo.png" alt="logo" class="header__logo">
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -84,10 +85,10 @@
 		<section class="hike">
 			<div class="hike__main">
 				<div class="hike__media">
-					<img src="img/hike-1.png" alt="image" class="hike__media-image">
+					<img src="img/hike/hike-1.png" alt="image" class="hike__media-image">
 					<div class="media-video">
-            <img src="img/hike-2.png" alt="video" class="hike__media-video">
-            <button class="video-button" type="button" aria-label="search video"><img src="img/play-item.svg" alt="" class="video-play"></button>
+            <img src="img/hike/hike-2.png" alt="video" class="hike__media-video">
+            <button class="video-button" type="button" aria-label="search video"><img src="img/hike/play-item.svg" alt="" class="video-play"></button>
           </div>
 				</div>
 				<div class="hike__info">
@@ -111,7 +112,7 @@
 					<div class="offer__list">
 						<!-- 1 -->
 						<div class="offer__list-item">
-							<img src="img/offer-item-1.png" alt="img" class="item__image">
+							<img src="img/offer/offer-item-1.png" alt="img" class="item__image">
 							<div class="item__text">
 								<span class="item__text-title">Опытный гид</span>
 								<p class="item__text-description">
@@ -121,7 +122,7 @@
 						</div>
 						<!-- 2 -->
 						<div class="offer__list-item">
-							<img src="img/offer-item-2.png" alt="img" class="item__image">
+							<img src="img/offer/offer-item-2.png" alt="img" class="item__image">
 							<div class="item__text">
 								<span class="item__text-title">Безопасный поход</span>
 								<p class="item__text-description">
@@ -131,7 +132,7 @@
 						</div>
 						<!-- 3 -->
 						<div class="offer__list-item">
-							<img src="img/offer-item-3.png" alt="img" class="item__image">
+							<img src="img/offer/offer-item-3.png" alt="img" class="item__image">
 							<div class="item__text">
 								<span class="item__text-title">Лояльные цены</span>
 								<p class="item__text-description">
@@ -143,13 +144,41 @@
           <button class="offer__list-button">Стоимость программ</button>
 				</div>
 				<div class="offer__image">
-					<img src="img/offer-1.png" alt="" class="offer__image-img">
-          <img src="img/offer-2.png" alt="" class="offer__image-img">
-          <img src="img/offer-3.png" alt="" class="offer__image-img">
-          <img src="img/offer-4.png" alt="" class="offer__image-img">
+					<img src="img/offer/offer-1.png" alt="image" class="offer__image-img">
+          <img src="img/offer/offer-2.png" alt="image" class="offer__image-img">
+          <img src="img/offer/offer-3.png" alt="image" class="offer__image-img">
+          <img src="img/offer/offer-4.png" alt="image" class="offer__image-img">
 				</div>
 			</div>
 		</section>
+
+    <section class="destinations">
+      <div class="destinations__main">
+        <span class="destinations__info-subtitle subtitle">по версии отдыхающих</span>
+				<h4 class="destinations__info-title title">Популярные направления</h4>
+        <div class="destinations__popular">
+          <!-- 1 -->
+          <div class="destinations__popular-block">
+            <img src="img/destinations/backgrond-1.png" alt="image" class="block-background">
+            <div class="block__rank">
+              <img src="img/destinations/star.svg" alt="star" class="block__rank-star">
+              <span class="block__rank-rating">4.9</span>
+            </div>
+            <div class="block__info">
+              <div class="block__info-text">
+                <span class="block__info-title">Озеро возле гор</span>
+                <span class="block__info-subtext">романтическое приключение</span>
+              </div>
+              <div class="block__info-background">
+                <span class="block__info-price">480 $</span>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
 	</main>
 
 </body>

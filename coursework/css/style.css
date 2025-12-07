@@ -4,7 +4,7 @@
   border: 0;
   margin: 0;
   outline: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 a {
@@ -22,7 +22,7 @@ button {
 }
 
 .header {
-  background-image: url(../img/header-background.png);
+  background-image: url(../img/header/header-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,12 +54,12 @@ button {
 }
 
 .header__nav-link {
-  font: 600 18px/100% "Montserrat", sans-serif;
+  font: 600 18px/100% "Nunito Sans", sans-serif;
   color: #FDFDFD;
 }
 
 .header__button {
-  font: 600 16px/20px "Montserrat", sans-serif;
+  font: 600 16px/20px "Nunito Sans", sans-serif;
   color: #FDFDFD;
   margin-left: 49px;
   padding: 12px 24px;
@@ -72,7 +72,7 @@ button {
 }
 
 .header__text {
-  font: 700 50px/150% "Montserrat", sans-serif;
+  font: 700 50px/150% "Nunito Sans", sans-serif;
   color: #FDFDFD;
   margin-bottom: 41px;
 }
@@ -109,18 +109,18 @@ button {
 }
 
 .form__select option {
-  font: 700 16px/150% "Montserrat", sans-serif;
+  font: 700 16px/150% "Nunito Sans", sans-serif;
   color: #000;
 }
 
 .block__text {
-  font: 400 14px/150% "Montserrat", sans-serif;
+  font: 400 14px/150% "Nunito Sans", sans-serif;
   color: #FDFDFD;
   margin: 8px 0 0 8px;
 }
 
 .form__search {
-  font: 700 16px/20px "Montserrat", sans-serif;
+  font: 700 16px/20px "Nunito Sans", sans-serif;
   padding: 16px 36px;
   color: #1A3E3E;
   background-color: #FDFDFD;
@@ -129,12 +129,12 @@ button {
 }
 
 .subtitle {
-  font: 400 24px/20px "Montserrat", sans-serif;
+  font: 400 24px/20px "Nunito Sans", sans-serif;
   color: #F2BE22;
 }
 
 .title {
-  font: 800 32px/120% "Montserrat", sans-serif;
+  font: 800 32px/120% "Nunito Sans", sans-serif;
   color: #18121E;
 }
 
@@ -188,12 +188,12 @@ button {
 }
 
 .hike__info-description, .offer__info-description {
-  font: 400 18px/150% "Montserrat", sans-serif;
+  font: 400 18px/150% "Nunito Sans", sans-serif;
   margin: 40px 0;
 }
 
 .hike__info-button {
-  font: 600 16px/20px "Montserrat", sans-serif;
+  font: 600 16px/20px "Nunito Sans", sans-serif;
   padding: 16px 36px;
   color: #FDFDFD;
   background-color: #1A3E3E;
@@ -236,17 +236,17 @@ button {
 }
 
 .item__text-title {
-  font: 700 18px/20px "Montserrat", sans-serif;
+  font: 700 18px/20px "Nunito Sans", sans-serif;
   color: #18121E;
 }
 
 .item__text-description {
-  font: 400 14px/20px "Montserrat", sans-serif;
+  font: 400 14px/20px "Nunito Sans", sans-serif;
   color: #000;
 }
 
 .offer__list-button {
-  font: 600 16px/20px "Montserrat", sans-serif;
+  font: 600 16px/20px "Nunito Sans", sans-serif;
   margin-top: 40px;
   padding: 16px 36px;
   color: #FDFDFD;
@@ -264,3 +264,87 @@ button {
   width: 250px;
   height: 250px;
 }
+
+.destinations {
+  background-color: #FFF;
+}
+
+.destinations__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 80px 0 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations__info-title {
+  margin: 8px 0 50px;
+}
+
+.destinations__popular-block {
+  position: relative;
+}
+
+.block-background {
+  width: 380px;
+}
+
+.block__rank {
+  position: absolute;
+  padding: 4px 8px;
+  background-color: rgba(253, 253, 253, 0.4);
+  top: 50px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.block__rank-star {
+  width: 17px;
+}
+
+.block__rank-rating {
+  font: 700 14px/18px "Nunito Sans", sans-serif;
+  color: #1A3E3E;
+}
+
+.block__info {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  bottom: 0;
+  border-radius: 0 0 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px 23px;
+  width: 100%;
+}
+
+.block__info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__info-title {
+  font: 700 24px/120% "Nunito Sans", sans-serif;
+  color: #FDF;
+}
+
+.block__info-subtext {
+  font: 400 14px/18px "Nunito Sans", sans-serif;
+  color: #FDF;
+}
+
+.block__info-background {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.block__info-price {
+  font: 700 20px/24px "Nunito Sans", sans-serif;
+  color: #FDF;
+}
+
