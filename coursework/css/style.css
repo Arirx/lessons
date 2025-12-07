@@ -285,10 +285,12 @@ button {
 
 .destinations__popular-block {
   position: relative;
+  width: 380px;
+  cursor: pointer;
 }
 
 .block-background {
-  width: 380px;
+  width: 100%;
 }
 
 .block__rank {
@@ -300,6 +302,7 @@ button {
   display: flex;
   align-items: center;
   border-radius: 4px 0 0 4px;
+  z-index: 2;
 }
 
 .block__rank-star {
@@ -316,11 +319,21 @@ button {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
   bottom: 0;
+  left: 0;
+  right: 0;
   border-radius: 0 0 32px 32px;
   display: flex;
   justify-content: space-between;
   padding: 20px 32px 23px;
   width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.block__info-hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .block__info-text {
@@ -341,6 +354,7 @@ button {
 .block__info-background {
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 
 .block__info-price {
@@ -348,3 +362,42 @@ button {
   color: #FDF;
 }
 
+.destinations__popular-block-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  padding: 30px 32px 20px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.destinations__popular-block:hover .destinations__popular-block-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.destinations__popular-block:hover .block__info {
+  opacity: 0;
+}
+
+.destinations__popular-block:hover .block__rank {
+  opacity: 0;
+}
+
+.block__text-hover {
+  margin: 40px 0 105px;
+  font: 400 16px/150% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.block__button {
+  width: 176px;
+  padding: 12px 24px;
+}
