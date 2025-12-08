@@ -290,6 +290,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .destinations__popular-block {
@@ -433,21 +434,32 @@ button {
 }
 
 .blog__article {
-  background: #FDFDFD;
-  width: 580px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .article__post {
   display: flex;
   gap: 24px;
+  border-radius: 10px;
+  width: 580px;
+  height: 312px;
+  background: #FDFDFD;
+  padding: 16px;
+}
+
+.article__post:hover .article__post-title {
+  text-decoration: underline;
 }
 
 .article__post-image {
   width: 230px;
-  padding: 16px;
 }
 
 .article__post-info {
+  position: relative;
   width: 294px;
 }
 
@@ -460,12 +472,16 @@ button {
 .article__post-text {
   font: 400 14px/20px "Nunito Sans", sans-serif;
   color: #18121E;
+  height: 116px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .article__post-item {
+  position: absolute;
+  bottom: 16px;
   display: flex;
-  justify-content: space-between;
-  margin: 24px 0 16px;
+  gap: 121px;
 }
 
 .article__post-data {
@@ -476,4 +492,9 @@ button {
 .article__post-href {
   font: 700 14px/20px "Nunito Sans", sans-serif;
   color: #1A3E3E;
+}
+
+.blog__button {
+  display: flex;
+  margin: 50px auto 0;
 }
