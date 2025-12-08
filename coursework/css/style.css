@@ -282,7 +282,7 @@ button {
   align-items: center;
 }
 
-.destinations__info-title {
+.destinations__header-title {
   margin: 8px 0 50px;
 }
 
@@ -409,4 +409,71 @@ button {
 .block__button {
   width: 176px;
   padding: 12px 24px;
+}
+
+.blog {
+  background-color: #F3F5F4;
+}
+
+.blog__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 80px 0 100px;
+  margin: 0 auto;
+}
+
+.blog__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__header-title {
+  margin: 8px 0 40px;
+}
+
+.blog__article {
+  background: #FDFDFD;
+  width: 580px;
+}
+
+.article__post {
+  display: flex;
+  gap: 24px;
+}
+
+.article__post-image {
+  width: 230px;
+  padding: 16px;
+}
+
+.article__post-info {
+  width: 294px;
+}
+
+.article__post-title {
+  margin: 16px 0 24px;
+  font: 700 24px/32px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.article__post-text {
+  font: 400 14px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.article__post-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 16px;
+}
+
+.article__post-data {
+  font: 700 14px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.article__post-href {
+  font: 700 14px/20px "Nunito Sans", sans-serif;
+  color: #1A3E3E;
 }
