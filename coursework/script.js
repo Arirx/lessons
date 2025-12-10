@@ -71,3 +71,31 @@ function checkSlider() {
 
 checkSlider();
 window.addEventListener('resize', checkSlider);
+
+// слайдер мобильный
+
+let blogSwiper = null;
+
+function initBlogSlider() {
+  if (window.innerWidth < 1180) {
+    if (!blogSwiper) {
+      blogSwiper = new Swiper('.blog__slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.blog-slider-next',
+          prevEl: '.blog-slider-prev'
+        }
+      });
+    }
+  } else {
+    if (blogSwiper) {
+      blogSwiper.destroy(true, true);
+      blogSwiper = null;
+    }
+  }
+}
+
+initBlogSlider();
+window.addEventListener('resize', initBlogSlider);
+

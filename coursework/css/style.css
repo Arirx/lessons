@@ -539,6 +539,39 @@ button {
   margin: 50px auto 0;
 }
 
+/*моб блог слайдер*/
+
+.blog__slider {
+  display: none !important;
+  margin-top: 40px;
+}
+
+@media (max-width: 1180px) {
+  .blog__article {
+    display: none !important;
+  }
+
+  .blog__slider {
+    display: block !important;
+  }
+}
+
+.blog__slider .swiper-button-prev,
+.blog__slider .swiper-button-next {
+  color: #1A3E3E;
+}
+
+.blog__slider .swiper-button-prev::after,
+.blog__slider .swiper-button-next::after {
+  font-size: 28px;
+}
+
+.blog__slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
 .gallery {
   background-color: #FFF;
 }
