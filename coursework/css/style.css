@@ -119,6 +119,7 @@ button {
 }
 
 .form__block {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,6 +136,14 @@ button {
   text-indent: 16px;
   appearance: none;
   cursor: pointer;
+}
+
+.form__block-img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 18px;
+  right: 16px;
 }
 
 .form__select option {
