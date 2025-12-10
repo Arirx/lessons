@@ -1,3 +1,4 @@
+// header menu
 const menu = document.querySelector('.header__nav');
 const menuBtn = document.querySelector('.header__nav-btn');
 const menuIcon = menuBtn.querySelector('.header__menu-btn');
@@ -38,3 +39,35 @@ document.addEventListener('keydown', (e) => {
     document.body.style.overflow = '';
   }
 });
+
+// swiper section gallery
+let gallerySwiper = null;
+
+function checkSlider() {
+  if (window.innerWidth < 1180) {
+    if (!gallerySwiper) {
+      gallerySwiper = new Swiper('.gallery__slider', {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (gallerySwiper) {
+      gallerySwiper.destroy(true, true);
+      gallerySwiper = null;
+    }
+  }
+}
+
+checkSlider();
+window.addEventListener('resize', checkSlider);

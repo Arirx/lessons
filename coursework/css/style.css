@@ -591,6 +591,40 @@ button {
   margin: 50px auto 0;
 }
 
+.gallery__slider {
+  display: none !important;
+  margin-top: 20px;
+}
+
+.gallery__slider .swiper-slide img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.gallery__slider .swiper-button-prev,
+.gallery__slider .swiper-button-next {
+  color: #1A3E3E;
+}
+
+.gallery__slider .swiper-button-prev::after,
+.gallery__slider .swiper-button-next::after {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media (max-width: 1180px) {
+  .gallery__list {
+    display: none;
+  }
+
+  .gallery__slider {
+    display: block !important;
+  }
+}
+
+
 .footer {
   background: #1A3E3E;
 }
