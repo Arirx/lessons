@@ -789,6 +789,12 @@ button:active {
   gap: 16px;
 }
 
+.item-group-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .item-new {
   width: 44px;
 }
@@ -796,9 +802,6 @@ button:active {
 .footer__services-item {
     position: relative;
     padding-left: 18px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 
     &::before {
       position: absolute;
