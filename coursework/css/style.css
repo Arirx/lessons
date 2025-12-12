@@ -34,6 +34,23 @@ button:active {
   border: 1px solid #1A3E3E;
 }
 
+.section-button {
+  font: 600 16px/20px "Nunito Sans", sans-serif;
+  padding: 16px 36px;
+  color: #FDFDFD;
+  background-color: #1A3E3E;
+}
+
+.subtitle {
+  font: 400 24px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.title {
+  font: 800 32px/120% "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
 .header {
   background-image: url(../img/header/header-background.png);
   background-size: cover;
@@ -188,17 +205,6 @@ button:active {
   margin-bottom: 28px;
 }
 
-
-.subtitle {
-  font: 400 24px/20px "Nunito Sans", sans-serif;
-  color: #F2BE22;
-}
-
-.title {
-  font: 800 32px/120% "Nunito Sans", sans-serif;
-  color: #18121E;
-}
-
 .hike {
   background-color: #FFF;
 }
@@ -220,7 +226,7 @@ button:active {
 
 .hike__media-image {
   position: absolute;
-  width: 350px;
+  max-width: 350px;
 }
 
 .media-video {
@@ -231,17 +237,18 @@ button:active {
 
 .hike__media-video {
   position: relative;
-  width: 350px;
+  max-width: 350px;
 }
 
 .video-play {
   position: absolute;
-  top: 175px;
-  left: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hike__info {
-  width: 580px;
+  max-width: 580px;
 }
 
 .hike__info-subtitle {
@@ -251,13 +258,6 @@ button:active {
 .hike__info-description, .offer__info-description {
   font: 400 18px/150% "Nunito Sans", sans-serif;
   margin: 40px 0;
-}
-
-.hike__info-button {
-  font: 600 16px/20px "Nunito Sans", sans-serif;
-  padding: 16px 36px;
-  color: #FDFDFD;
-  background-color: #1A3E3E;
 }
 
 .offer {
@@ -841,6 +841,35 @@ position: relative;
   .header__main {
     padding: 0 15px;
   }
+
+  .hike__main {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .hike__media-image {
+    display: none;
+  }
+
+  .hike__media {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .media-video {
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width:1050px) {
@@ -961,5 +990,21 @@ position: relative;
 
   .header__text {
     font: 700 28px/150% "Nunito Sans", sans-serif;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .section-button {
+    padding: 12px 24px;
+  }
+
+  .hike__info-description, .offer__info-description {
+    font-size: 16px;
   }
 }
