@@ -40,7 +40,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// swiper section gallery
 let gallerySwiper = null;
 
 function checkSlider() {
@@ -71,8 +70,6 @@ function checkSlider() {
 
 checkSlider();
 window.addEventListener('resize', checkSlider);
-
-// слайдер мобильный
 
 let blogSwiper = null;
 

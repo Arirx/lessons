@@ -562,21 +562,9 @@ button:active {
   margin: 50px auto 0;
 }
 
-/*моб блог слайдер*/
-
 .blog__slider {
   display: none !important;
-  margin-top: 40px;
-}
-
-@media (max-width: 1180px) {
-  .blog__article {
-    display: none !important;
-  }
-
-  .blog__slider {
-    display: block !important;
-  }
+  margin-top: 32px;
 }
 
 .blog__slider .swiper-button-prev,
@@ -649,7 +637,7 @@ button:active {
 
 .gallery__slider {
   display: none !important;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .gallery__slider .swiper-slide img {
@@ -669,17 +657,6 @@ button:active {
   font-size: 28px;
   font-weight: bold;
 }
-
-@media (max-width: 1180px) {
-  .gallery__list {
-    display: none;
-  }
-
-  .gallery__slider {
-    display: block !important;
-  }
-}
-
 
 .footer {
   background: #1A3E3E;
@@ -874,6 +851,22 @@ position: relative;
 
   .offer__main {
     flex-direction: column;
+  }
+
+  .blog__article {
+    display: none !important;
+  }
+
+  .blog__slider {
+    display: block !important;
+  }
+
+  .gallery__list {
+    display: none;
+  }
+
+  .gallery__slider {
+    display: block !important;
   }
 }
 
