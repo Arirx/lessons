@@ -337,25 +337,26 @@ button:active {
   align-items: center;
 }
 
-.destinations__header-title {
-  margin: 8px 0 50px;
-}
-
 .destinations__popular {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin: 50px 0;
 }
 
 .destinations__popular-block {
   position: relative;
   width: 380px;
+  height: 500px;
   cursor: pointer;
 }
 
 .block-background {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
 }
 
 .block__rank {
@@ -389,6 +390,7 @@ button:active {
   border-radius: 0 0 32px 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 32px 23px;
   width: 100%;
   z-index: 2;
@@ -466,6 +468,11 @@ button:active {
 .block__button {
   width: 176px;
   padding: 12px 24px;
+}
+
+.destinations__button {
+  display: flex;
+  margin: 0 auto;
 }
 
 .blog {
@@ -1012,5 +1019,39 @@ position: relative;
 
   .hike__info-description, .offer__info-description {
     margin: 24px 0;
-}
+  }
+
+  .destinations__popular {
+    margin: 32px 0;
+  }
+
+  .destinations__popular-block {
+    width: 285px;
+    height: 400px;
+  }
+
+  .block__info {
+    padding: 23px;
+  }
+
+  .block__info-title {
+    font-size: 18px;
+  } 
+
+  .block__info-subtext {
+    display: none;
+  }
+
+  .block__info-background {
+    padding: 6px 12px;
+  }
+  
+  .block__info-price {
+    font: 700 16px/18px "Nunito Sans", sans-serif;
+  }
+
+  .block__text-hover {
+    font: 400 14px/18px "Nunito Sans", sans-serif;
+    margin: 20px 0 50px;
+  }
 }
