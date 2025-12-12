@@ -51,6 +51,11 @@ button:active {
   color: #18121E;
 }
 
+.text {
+  font: 400 18px/150% "Nunito Sans", sans-serif;
+  color: #000;
+}
+
 .header {
   background-image: url(../img/header/header-background.png);
   background-size: cover;
@@ -256,7 +261,6 @@ button:active {
 }
 
 .hike__info-description, .offer__info-description {
-  font: 400 18px/150% "Nunito Sans", sans-serif;
   margin: 40px 0;
 }
 
@@ -276,7 +280,7 @@ button:active {
 }
 
 .offer__info {
-  width: 580px;
+  max-width: 580px;
 }
 
 .offer__list {
@@ -294,16 +298,6 @@ button:active {
 .item__image {
   width: 50px;
   height: 50px;
-}
-
-.item__text-title {
-  font: 700 18px/20px "Nunito Sans", sans-serif;
-  color: #18121E;
-}
-
-.item__text-description {
-  font: 400 14px/20px "Nunito Sans", sans-serif;
-  color: #000;
 }
 
 .offer__list-button {
@@ -870,6 +864,10 @@ position: relative;
     justify-content: center;
     align-items: center;
   }
+
+  .offer__main {
+    flex-direction: column;
+  }
 }
 
 @media (max-width:1050px) {
@@ -1000,11 +998,19 @@ position: relative;
     font-size: 16px;
   }
 
+  .text {
+    font-size: 16px;
+  }
+
   .section-button {
     padding: 12px 24px;
   }
 
-  .hike__info-description, .offer__info-description {
-    font-size: 16px;
+  .offer__image {
+    display: none;
   }
+
+  .hike__info-description, .offer__info-description {
+    margin: 24px 0;
+}
 }
