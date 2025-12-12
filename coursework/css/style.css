@@ -210,6 +210,10 @@ button:active {
   margin-bottom: 28px;
 }
 
+.content {
+  position: relative;
+}
+
 .hike {
   background-color: #FFF;
 }
@@ -590,7 +594,7 @@ button:active {
 .gallery__main {
   max-width: 1180px;
   width: 100%;
-  padding: 80px 0 100px;
+  padding: 80px 0 200px;
   margin: 0 auto;
 }
 
@@ -661,12 +665,15 @@ button:active {
 .subscription {
   max-width: 1180px;
   width: 100%;
-  margin: 0 auto;
   padding: 40px 100px;
   background: #FDFDFD;
   box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
   display: flex;
   gap: 64px;
+  position: absolute;
+  bottom: -98px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .subscription__header-subtitle {
@@ -720,7 +727,7 @@ button:active {
 .footer__main {
   max-width: 1180px;
   width: 100%;
-  padding: 80px 0 80px;
+  padding: 180px 0 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -883,6 +890,10 @@ position: relative;
     padding: 0 15px;
   }
 
+  .content {
+    position: static;
+  }
+
   .hike__main {
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -943,6 +954,20 @@ position: relative;
 
   .footer__info-text {
     margin-bottom: 30px;
+  }
+
+  .subscription {
+    width: 95%;
+    padding: 24px;
+    background: #FDFDFD;
+    box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
+    display: flex;
+    gap: 64px;
+    position: static;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto 100px;
   }
 }
 
@@ -1037,6 +1062,12 @@ position: relative;
       left: 0;
     }
   }
+
+  .subscription {
+    flex-direction: column;
+    gap: 40px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1162,5 +1193,34 @@ position: relative;
   .footer__bottom-container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .subscription {
+    gap: 18px;
+    margin: 0 auto 50px;
+  }
+
+  .subscription__header-subtitle {
+    font: 400 16px/20px "Nunito Sans", sans-serif;
+  }
+
+  .subscription__header-title {
+    font: 800 24px/120% "Nunito Sans", sans-serif;
+  }
+
+  .subscription__form-group {
+    flex-direction: column;
+  }
+
+  .subscription__form-input {
+    width: 100%;
+  }
+
+  .subscription__form-button {
+    align-self: flex-start;
+  }
+
+  .subscription__policy {
+    margin-top: 24px;
   }
 }
