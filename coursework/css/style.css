@@ -658,6 +658,61 @@ button:active {
   font-weight: bold;
 }
 
+.subscription {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 100px;
+  background: #FDFDFD;
+  box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
+  display: flex;
+  gap: 64px;
+}
+
+.subscription__header-subtitle {
+  font: 400 18px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.subscription__header-title {
+  font: 800 26px/120% "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__form-group {
+  display: flex;
+  gap: 16px;
+}
+
+.subscription__form-input {
+  width: 280px;
+  height: 44px;
+  text-indent: 12px;
+  background: #F3F5F4;
+  border-radius: 4px;
+}
+
+.subscription__form-label {
+  font: 600 16px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__form-button {
+  padding: 12px 24px;
+}
+
+.subscription__policy {
+  margin-top: 8px;
+  width: 100%;
+  font: 600 14px/18px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__policy-link {
+  color: #18121E;
+  text-decoration: underline;
+}
+
 .footer {
   background: #1A3E3E;
 }
