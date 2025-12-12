@@ -727,9 +727,16 @@ button:active {
   gap: 16px;
 }
 
+.item-new {
+  width: 44px;
+}
+
 .footer__services-item {
     position: relative;
     padding-left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     &::before {
       position: absolute;
@@ -778,24 +785,25 @@ button:active {
   color: #FDFDFD;
 }
 
-.footer-bottom {
+.footer__bottom {
   background: #18121E;
 }
 
-.footer-bottom__container {
+.footer__bottom-container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.footer-bottom__text, .footer-bottom__policy {
+.footer__bottom-text, .footer__bottom-policy {
   font: 600 14px/18px "Nunito Sans", sans-serif;
   color: #FFF;
 }
 
-.footer-bottom__policy {
+.footer__bottom-policy {
 position: relative;
 
   &::before {
@@ -812,7 +820,7 @@ position: relative;
 
 
 @media (max-width: 1180px) {
-  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main {
+  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main, .footer__main {
     padding: 80px 15px 100px;
   }
 
@@ -867,6 +875,19 @@ position: relative;
 
   .gallery__slider {
     display: block !important;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer__bottom-container {
+    padding: 24px 15px;
+  }
+
+  .footer__info-text {
+    margin-bottom: 30px;
   }
 }
 
@@ -964,7 +985,7 @@ position: relative;
 }
 
 @media (max-width: 768px) {
-  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main {
+  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main, .footer__main {
     padding: 50px 15px 50px;
   }
 
@@ -1081,5 +1102,10 @@ position: relative;
 
   .article__post-item {
     margin: 0;
+  }
+
+  .footer__bottom-container {
+    flex-direction: column;
+    justify-content: center;
   }
 }
