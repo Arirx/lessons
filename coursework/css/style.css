@@ -414,12 +414,12 @@ button:active {
 
 .block__info-title {
   font: 700 24px/120% "Nunito Sans", sans-serif;
-  color: #FDF;
+  color: #FDFDFD;
 }
 
 .block__info-subtext {
   font: 400 14px/18px "Nunito Sans", sans-serif;
-  color: #FDF;
+  color: #FDFDFD;
 }
 
 .block__info-background {
@@ -430,7 +430,7 @@ button:active {
 
 .block__info-price {
   font: 700 20px/24px "Nunito Sans", sans-serif;
-  color: #FDF;
+  color: #FDFDFD;
 }
 
 .destinations__popular-block-hover {
@@ -515,7 +515,8 @@ button:active {
   padding: 16px;
 }
 
-.article__post:hover .article__post-title {
+.article__post:hover .article__post-title,
+.article__post:hover .article__post-href {
   text-decoration: underline;
 }
 
@@ -789,6 +790,12 @@ button:active {
   gap: 16px;
 }
 
+.item-group-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .item-new {
   width: 44px;
 }
@@ -796,9 +803,6 @@ button:active {
 .footer__services-item {
     position: relative;
     padding-left: 18px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
 
     &::before {
       position: absolute;
