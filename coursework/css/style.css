@@ -304,12 +304,18 @@ button:active {
   height: 50px;
 }
 
+.item__text-title {
+  font: 700 18px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.item__text-description {
+  font: 400 14px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
 .offer__list-button {
-  font: 600 16px/20px "Nunito Sans", sans-serif;
   margin-top: 40px;
-  padding: 16px 36px;
-  color: #FDFDFD;
-  background-color: #1A3E3E;
 }
 
 .offer__image {
@@ -469,11 +475,6 @@ button:active {
   color: #FDFDFD;
 }
 
-.block__button {
-  width: 176px;
-  padding: 12px 24px;
-}
-
 .destinations__button {
   display: flex;
   margin: 0 auto;
@@ -498,10 +499,9 @@ button:active {
 }
 
 .blog__article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   margin: 40px 0;
 }
 
