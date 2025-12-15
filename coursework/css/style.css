@@ -1,0 +1,1230 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #FDFDFD;
+  color: #1A3E3E;
+  border: 1px solid #1A3E3E;
+}
+
+.section-button {
+  font: 600 16px/20px "Nunito Sans", sans-serif;
+  padding: 16px 36px;
+  color: #FDFDFD;
+  background-color: #1A3E3E;
+}
+
+.subtitle {
+  font: 400 24px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.title {
+  font: 800 32px/120% "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.text {
+  font: 400 18px/150% "Nunito Sans", sans-serif;
+  color: #000;
+}
+
+.header {
+  background-image: url(../img/header/header-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 137px;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header__nav-link {
+  font: 600 18px/100% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.header__button {
+  font: 600 16px/20px "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+  margin-left: 49px;
+  padding: 12px 24px;
+  background-color: #1A3E3E;
+}
+
+.header__nav-btn {
+  display: none;
+  background: transparent;
+}
+
+.header__close-btn {
+  width: 24px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__menu-btn {
+  width: 24px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__nav-btn.active .header__menu-btn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__nav-btn.active .header__close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__content {
+  margin-top: 463px;
+  padding-bottom: 81px;
+}
+
+.header__text {
+  font: 700 50px/150% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+  margin-bottom: 41px;
+}
+
+.header__tour {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.header__form {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.form__block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.form__select {
+  border: 1px solid #FDFDFD;
+  color: #FDFDFD;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 270px;
+  height: 52px;
+  text-indent: 16px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.form__block-img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 18px;
+  right: 16px;
+}
+
+.form__select option {
+  font: 700 16px/150% "Nunito Sans", sans-serif;
+  color: #000;
+}
+
+.block__text {
+  font: 400 14px/150% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+  margin: 8px 0 0 8px;
+}
+
+.form__search {
+  font: 700 16px/20px "Nunito Sans", sans-serif;
+  padding: 16px 36px;
+  color: #1A3E3E;
+  background-color: #FDFDFD;
+  border-radius: 4px;
+  margin-bottom: 28px;
+}
+
+.header__search {
+  display: none;
+  font: 700 16px/20px "Nunito Sans", sans-serif;
+  padding: 16px 36px;
+  color: #1A3E3E;
+  border-radius: 4px;
+  margin-bottom: 28px;
+}
+
+.content {
+  position: relative;
+}
+
+.hike {
+  background-color: #FFF;
+}
+
+.hike__main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hike__media {
+  position: relative;
+  width: 480px;
+  height: 526px;
+}
+
+.hike__media-image {
+  position: absolute;
+  max-width: 350px;
+}
+
+.media-video {
+  position: absolute;
+  top: 126px;
+  left: 130px;
+}
+
+.hike__media-video {
+  position: relative;
+  max-width: 350px;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hike__info {
+  max-width: 580px;
+}
+
+.hike__info-subtitle {
+  margin-bottom: 8px;
+}
+
+.hike__info-description, .offer__info-description {
+  margin: 40px 0;
+}
+
+.offer {
+  background-color: #F3F5F4;
+}
+
+.offer__main {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: min(40px);
+}
+
+.offer__info {
+  max-width: 580px;
+}
+
+.offer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.offer__list-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.item__image {
+  width: 50px;
+  height: 50px;
+}
+
+.item__text-title {
+  font: 700 18px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.item__text-description {
+  font: 400 14px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.offer__list-button {
+  margin-top: 40px;
+}
+
+.offer__image {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 250px 250px;
+  gap: 10px;
+}
+
+.offer__image-img {
+  width: 250px;
+  height: 250px;
+}
+
+.destinations {
+  background-color: #FFF;
+}
+
+.destinations__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 80px 0 100px;
+  margin: 0 auto;
+}
+
+.destinations__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations__popular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.destinations__popular-block {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.block-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.block__rank {
+  position: absolute;
+  padding: 4px 8px;
+  background-color: rgba(253, 253, 253, 0.4);
+  top: 50px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+  z-index: 2;
+}
+
+.block__rank-star {
+  width: 17px;
+}
+
+.block__rank-rating {
+  font: 700 14px/18px "Nunito Sans", sans-serif;
+  color: #1A3E3E;
+}
+
+.block__info {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 23px;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.block__info-hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block__info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__info-title {
+  font: 700 24px/120% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.block__info-subtext {
+  font: 400 14px/18px "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.block__info-background {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.block__info-price {
+  font: 700 20px/24px "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.destinations__popular-block-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  padding: 30px 32px 20px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.destinations__popular-block:hover .destinations__popular-block-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.destinations__popular-block:hover .block__info {
+  opacity: 0;
+}
+
+.destinations__popular-block:hover .block__rank {
+  opacity: 0;
+}
+
+.block__text-hover {
+  margin: 40px 0 105px;
+  font: 400 16px/150% "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.destinations__button {
+  display: flex;
+  margin: 0 auto;
+}
+
+.blog {
+  background-color: #F3F5F4;
+}
+
+.blog__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 80px 0 100px;
+  margin: 0 auto;
+}
+
+.blog__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog__article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.article__post {
+  display: flex;
+  gap: 24px;
+  border-radius: 10px;
+  width: 580px;
+  height: 312px;
+  background: #FDFDFD;
+  padding: 16px;
+}
+
+.article__post:hover .article__post-title,
+.article__post:hover .article__post-href {
+  text-decoration: underline;
+}
+
+.article__post-image {
+  width: 230px;
+}
+
+.article__post-info {
+  width: 294px;
+  display: grid;
+}
+
+.article__post-title {
+  margin-top: 16px;
+  font: 700 24px/32px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.article__post-text {
+  font: 400 14px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+  max-height: 116px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin: 24px 0;
+}
+
+.article__post-item {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+.article__post-data {
+  font: 700 14px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.article__post-href {
+  font: 700 14px/20px "Nunito Sans", sans-serif;
+  color: #1A3E3E;
+}
+
+.blog__button {
+  display: flex;
+  margin: 50px auto 0;
+}
+
+.blog__slider {
+  display: none !important;
+  margin-top: 32px;
+}
+
+.blog__slider .swiper-button-prev,
+.blog__slider .swiper-button-next {
+  color: #1A3E3E;
+}
+
+.blog__slider .swiper-button-prev::after,
+.blog__slider .swiper-button-next::after {
+  font-size: 28px;
+}
+
+.blog__slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+.gallery {
+  background-color: #FFF;
+}
+
+.gallery__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 80px 0 200px;
+  margin: 0 auto;
+}
+
+.gallery__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__header-title {
+  margin: 8px 0 40px;
+}
+
+.gallery__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery__list-item {
+  overflow: hidden;
+  border-radius: 6px;
+  height: 250px;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:first-child {
+    grid-column: 1/3;
+  }
+
+  &:nth-child(5) {
+    grid-column: 2/4;
+  }
+}
+
+.gallery__button {
+  display: flex;
+  margin: 50px auto 0;
+}
+
+.gallery__slider {
+  display: none !important;
+  margin-top: 32px;
+}
+
+.gallery__slider .swiper-slide img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.gallery__slider .swiper-button-prev,
+.gallery__slider .swiper-button-next {
+  color: #1A3E3E;
+}
+
+.gallery__slider .swiper-button-prev::after,
+.gallery__slider .swiper-button-next::after {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subscription {
+  max-width: 1180px;
+  width: 100%;
+  padding: 40px 100px;
+  background: #FDFDFD;
+  box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
+  display: flex;
+  gap: 64px;
+  position: absolute;
+  bottom: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subscription__header-subtitle {
+  font: 400 18px/20px "Nunito Sans", sans-serif;
+  color: #F2BE22;
+}
+
+.subscription__header-title {
+  font: 800 26px/120% "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__form-group {
+  display: flex;
+  gap: 16px;
+}
+
+.subscription__form-input {
+  width: 280px;
+  height: 44px;
+  text-indent: 12px;
+  background: #F3F5F4;
+  border-radius: 4px;
+}
+
+.subscription__form-label {
+  font: 600 16px/20px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__form-button {
+  padding: 12px 24px;
+}
+
+.subscription__policy {
+  margin-top: 8px;
+  width: 100%;
+  font: 600 14px/18px "Nunito Sans", sans-serif;
+  color: #18121E;
+}
+
+.subscription__policy-link {
+  color: #18121E;
+  text-decoration: underline;
+}
+
+.footer {
+  background: #1A3E3E;
+}
+
+.footer__main {
+  max-width: 1180px;
+  width: 100%;
+  padding: 180px 0 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info {
+  max-width: 480px;
+}
+
+.footer__info-title {
+  font: 700 20px/24px "Nunito Sans", sans-serif;
+  color: #FFF;
+}
+
+.footer__info-text {
+  font: 400 14px/20px "Nunito Sans", sans-serif;
+  color: #FFF;
+  margin: 17px 0 80px;
+}
+
+.footer__services {
+  max-width: 280px;
+}
+
+.footer__info-connection {
+  display: flex;
+  gap: 24px;
+}
+
+.connection-mail, .connection-phone {
+  font: 600 14px/18px "Nunito Sans", sans-serif;
+  color: #FFF;
+}
+
+.footer__info-social {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.social-network-btn {
+  background: transparent;
+}
+
+.social-network-img {
+  width: 32px;
+}
+
+.footer__services-title {
+  font: 700 20px/24px "Nunito Sans", sans-serif;
+  color: #F3F5F4;
+}
+
+.footer__services-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-group-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-new {
+  width: 44px;
+}
+
+.footer__services-item {
+    position: relative;
+    padding-left: 18px;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      content: "";
+      width: 6px;
+      height: 10px;
+      background: center/cover url(../img/header/arrow-menu.svg) no-repeat;
+    }
+
+    &:hover {
+      &::before {
+        background-image: url(../img/header/arrow-menu-hover.svg);
+      }
+
+      .footer__services-link {
+        color: #F2BE22;
+        box-shadow: inset 0 -1px 0 transparent;
+        display: inline;
+
+        &:hover {
+          width: 100%;
+          box-shadow: inset 0 -1px 0 #F2BE22;
+        }
+      }
+    }
+  }
+
+  .footer__services-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 1px;
+      background: #F2BE22;
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+    }
+  }
+
+.footer__services-link {
+  font: 400 14px/18px "Nunito Sans", sans-serif;
+  color: #FDFDFD;
+}
+
+.footer__bottom {
+  background: #18121E;
+}
+
+.footer__bottom-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom-text, .footer__bottom-policy {
+  font: 600 14px/18px "Nunito Sans", sans-serif;
+  color: #FFF;
+}
+
+.footer__bottom-policy {
+position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+  }
+}
+
+
+
+@media (max-width: 1180px) {
+  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main, .footer__main {
+    padding: 80px 15px 100px;
+  }
+
+  .header__main {
+    padding: 0 15px;
+  }
+
+  .content {
+    position: static;
+  }
+
+  .hike__main {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .hike__media-image {
+    display: none;
+  }
+
+  .hike__media {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .media-video {
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offer__main {
+    flex-direction: column;
+  }
+
+  .blog__article {
+    display: none !important;
+  }
+
+  .blog__slider {
+    display: block !important;
+  }
+
+  .gallery__list {
+    display: none;
+  }
+
+  .gallery__slider {
+    display: block !important;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer__bottom-container {
+    padding: 24px 15px;
+  }
+
+  .footer__info-text {
+    margin-bottom: 30px;
+  }
+
+  .subscription {
+    width: 95%;
+    padding: 24px;
+    background: #FDFDFD;
+    box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
+    display: flex;
+    gap: 64px;
+    position: static;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto 100px;
+  }
+}
+
+@media (max-width:1050px) {
+  .header__button {
+    display: none;
+  }
+
+  .header__form {
+    display: none;
+  }
+
+  .header__search {
+    display: block;
+  }
+
+  .form__block {
+    display: block; 
+  }
+}
+
+@media (max-width: 850px) {
+  .header__nav-btn {
+    display: block;
+    position: relative;
+    z-index: 15;
+  }
+
+  .header__nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: #1A3E3E;
+    display: flex;
+    overflow: hidden;
+    transition: .3s ease-in;
+
+
+    &.open {
+    width: 100%;
+    height: 100vh;
+  }
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    padding: 150px 24px 0;
+  }
+  
+  .header__nav-item {
+    position: relative;
+    padding-left: 18px;
+
+    &::before {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      content: "";
+      width: 6px;
+      height: 10px;
+      background: center/cover url(../img/header/arrow-menu.svg) no-repeat;
+    }
+
+    &:hover {
+      &::before {
+        background-image: url(../img/header/arrow-menu-hover.svg);
+      }
+
+      .header__nav-link {
+        color: #F2BE22;
+
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .header__nav-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 1px;
+      background: #F2BE22;
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+    }
+  }
+
+  .subscription {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hike__main, .offer__main, .destinations__main, .blog__main, .gallery__main, .footer__main {
+    padding: 50px 15px 50px;
+  }
+
+  .header__main {
+    padding: 0 15px;
+  }
+
+  .header__content {
+    margin-top: 234px;
+    padding-bottom: 50px;
+  }
+
+  .header__nav-list {
+    padding: 150px 16px 0;
+    gap: 16px;
+  }
+
+  .header__logo {
+    width: 84px;
+  }
+
+  .header__text {
+    font: 700 28px/150% "Nunito Sans", sans-serif;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .section-button {
+    padding: 12px 24px;
+  }
+
+  .offer__image {
+    display: none;
+  }
+
+  .hike__info-description, .offer__info-description {
+    margin: 24px 0;
+  }
+
+  .destinations__popular {
+    margin: 32px 0;
+  }
+
+  .destinations__popular-block {
+    width: 285px;
+    height: 400px;
+  }
+
+  .block__info {
+    padding: 23px;
+  }
+
+  .block__info-title {
+    font-size: 18px;
+  } 
+
+  .block__info-subtext {
+    display: none;
+  }
+
+  .block__info-background {
+    padding: 6px 12px;
+  }
+  
+  .block__info-price {
+    font: 700 16px/18px "Nunito Sans", sans-serif;
+  }
+
+  .block__text-hover {
+    font: 400 14px/18px "Nunito Sans", sans-serif;
+    margin: 20px 0 50px;
+  }
+
+  .blog__article {
+    margin: 32px 0;
+  }
+
+  .article__post {
+    flex-direction: column;
+    width: 285px;
+    height: 496px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .article__post-image {
+    width: 285px;
+    height: 280px;
+  }
+
+  .article__post-info {
+    padding: 16px;
+  }
+
+  .article__post-title {
+    font: 700 20px/26px "Nunito Sans", sans-serif;
+    margin: 0;
+  }
+
+  .article__post-text {
+    margin: 16px 0;
+    height: 80px;
+  }
+
+  .article__post-item {
+    margin: 0;
+  }
+
+  .footer__bottom-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subscription {
+    gap: 18px;
+    margin: 0 auto 50px;
+  }
+
+  .subscription__header-subtitle {
+    font: 400 16px/20px "Nunito Sans", sans-serif;
+  }
+
+  .subscription__header-title {
+    font: 800 24px/120% "Nunito Sans", sans-serif;
+  }
+
+  .subscription__form-group {
+    flex-direction: column;
+  }
+
+  .subscription__form-input {
+    width: 100%;
+  }
+
+  .subscription__form-button {
+    align-self: flex-start;
+  }
+
+  .subscription__policy {
+    margin-top: 24px;
+  }
+}
